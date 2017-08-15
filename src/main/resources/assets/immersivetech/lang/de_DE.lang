@@ -1,0 +1,30 @@
+#CREATIVE TAB
+itemGroup.immersivetech=Immersive Tech
+
+
+#ITEMS
+item.immersivetech.material.salt.name=Salz
+
+
+#FLUIDS
+tile.immersivetech.fluidDistWater.name=Destilliertes Wasser
+tile.immersivetech.fluidSteam.name=Dampf
+
+fluid.distwater=Destilliertes Wasser
+fluid.steam=Dampf
+
+desc.immersiveengineering.info.multiblock.IT:Distiller=Destillierer
+desc.immersiveengineering.info.multiblock.IT:SolarTower=Solarturm
+desc.immersiveengineering.info.multiblock.IT:SolarReflector=Reflektor
+desc.immersiveengineering.info.multiblock.IT:SteamTurbine=Dampfturbine
+
+ie.manual.category.it.name=Immersive Tech
+
+ie.manual.entry.distiller.name=Destillierer
+ie.manual.entry.distiller.subtext=Klarer als Wasser
+
+ie.manual.entry.solarTower.name=Solarturm
+ie.manual.entry.solarTower.subtext=Die Kraft der Sonne
+
+ie.manual.entry.steamTurbine.name=Dampfturbine
+ie.manual.entry.steamTurbine.subtext=Tuff Tuff!
