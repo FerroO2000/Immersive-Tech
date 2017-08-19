@@ -18,7 +18,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraftforge.fluids.FluidStack;
@@ -55,7 +54,7 @@ public class TileEntitySteamTurbine extends TileEntityMultiblockMetal<TileEntity
 		if(isDummy())
 			return;
 
-		if(!world.isRemote)
+		if(!worldObj.isRemote)
 		{
 			boolean prevActive = active;
 
@@ -116,11 +115,11 @@ public class TileEntitySteamTurbine extends TileEntityMultiblockMetal<TileEntity
 		TileEntity eTile;
 		
 		if(w==0) {
-			eTile = world.getTileEntity(this.getBlockPosForPos(69).offset(mirrored? facing.rotateY() : facing.rotateYCCW(),1));
+			eTile = worldObj.getTileEntity(this.getBlockPosForPos(69).offset(mirrored? facing.rotateY() : facing.rotateYCCW(),1));
 		}else if(w==1) {
-			eTile = world.getTileEntity(this.getBlockPosForPos(71).offset(mirrored? facing.rotateYCCW() : facing.rotateY(),1));
+			eTile = worldObj.getTileEntity(this.getBlockPosForPos(71).offset(mirrored? facing.rotateYCCW() : facing.rotateY(),1));
 		}else {
-			eTile = world.getTileEntity(this.getBlockPosForPos(106).add(0,1,0));
+			eTile = worldObj.getTileEntity(this.getBlockPosForPos(106).add(0,1,0));
 		}
 		
 		if(EnergyHelper.isFluxReceiver(eTile, getEnergyFacing(w))) {
@@ -1008,7 +1007,7 @@ public class TileEntitySteamTurbine extends TileEntityMultiblockMetal<TileEntity
 	}
 
 	@Override
-	public NonNullList<ItemStack> getInventory() {
+	public ItemStack[] getInventory() {
 		return null;
 	}
 

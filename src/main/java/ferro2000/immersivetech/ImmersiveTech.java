@@ -107,7 +107,7 @@ public class ImmersiveTech {
 	public static CreativeTabs creativeTab = new CreativeTabs(MODID)
 	{
 		@Override
-		public ItemStack getTabIconItem()
+		public Item getTabIconItem()
 		{
 			return null;
 		}
