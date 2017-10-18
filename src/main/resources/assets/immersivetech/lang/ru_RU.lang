@@ -9,15 +9,32 @@ item.immersivetech.material.salt.name=Соль
 #FLUIDS
 tile.immersivetech.fluidDistWater.name=Дистиллированная Вода
 tile.immersivetech.fluidSteam.name=Пар
+tile.immersivetech.fluidSlime.name=Жидкая слизь
 
 fluid.dist_water=Дистиллированная Вода
 fluid.steam=Пар
+fluid.slime=Жидкая слизь
+
+
+#TILE ENTITYS
+tile.immersivetech.metal_multiblock.distiller.name=Дистиллятор
+tile.immersivetech.metal_multiblock.solar_tower.name=Солнечная Башня
+tile.immersivetech.metal_multiblock.solar_reflector.name=Солнечный Отражатель
+tile.immersivetech.metal_multiblock.steam_turbine.name=Паровая Турбина
+tile.immersivetech.metal_multiblock.boiler.name=Паровой котёл
+tile.immersivetech.metal_multiblock.alternator.name=Генератор переменного тока
 
 desc.immersiveengineering.info.multiblock.IT:Distiller=Дистиллятор
 desc.immersiveengineering.info.multiblock.IT:SolarTower=Солнечная Башня
 desc.immersiveengineering.info.multiblock.IT:SolarReflector=Солнечный Отражатель
 desc.immersiveengineering.info.multiblock.IT:SteamTurbine=Паровая Турбина
+desc.immersiveengineering.info.multiblock.IT:Boiler=Паровой котёл
+desc.immersiveengineering.info.multiblock.IT:Alternator=Генератор переменного тока
 
+tile.immersivetech.connectors.connectors_timer.name=Краснокаменный таймер
+
+
+#MANUAL
 ie.manual.category.it.name=Immersive Tech
 
 ie.manual.entry.distiller.name=Дистиллятор
@@ -41,3 +58,13 @@ ie.manual.entry.boiler.name=Паровой котёл
 ie.manual.entry.boiler.subtext=Дизельный метод
 ie.manual.entry.boiler0=Паровой котёл - многоблочная структура, которая использует <link;biodiesel;§o§nДизель§r> и Воду для производства пара. Структура строиться, как показано выше, и формируеться с использованием молота инженера на центральном железобетонном блоке (длинная сторона).
 ie.manual.entry.boiler1=Применение сигнала Красного камня на панели управления спереди остановит процесс машины, это можно инвертировать с помощью молота иженера.<br>Вода может быть введена в котел через люки слева, которые отмечены синими точками. Дизель можно вводить справа от машины.<br>Одно ведро воды производит 500 mB пара и  <link;distiller;§n§oДистиллированная Вода§r> производит 750 mB пара потребляя (1000/burnTime) <config;i;boiler_burnTimeModifier> mB Дизиля.
+
+ie.manual.entry.alternator.name=Генератор переменного тока
+ie.manual.entry.alternator.subtext=Давайте преобразуем
+ie.manual.entry.alternator0=Генератор переменного тока - многоблочная структура, которая преобразует кинетическую энергию в электричество.<br>Структура строеться, как показано выше, и формируеться с использованием молота инженера на центральном тяжелом инженерном блоке (короткая сторона)..
+ie.manual.entry.alternator1=Для работы ему необходим генератор кинетической энергии справа (<link;steamTurbine;§n§oПаровая Турбина§r>). Вход кинетической энергии находится на задней панели машины (там, где имеются блоки из листового металла), а выход потока - спереди-слева и спереди-справа. Машина производит (Крутящий*момент)/<config;i;alternator_RfModifier> Flux/t.<br>Генератор может хранить <config;i;alternator_energyStorage> Flux.
+ie.manual.entry.alternator1=Паровая турбина и генератор переменного тока
+
+ie.manual.entry.redstone.name=Краснокаменный таймер
+ie.manual.entry.redstone.subtext=Тик-Ток
+ie.manual.entry.redstone0=У §6Краснокаменного таймера§r есть функция вывода сигнала красного цвета в зависимости от задержки, наложенной на него. Время задержки можно установить в таймере таймера, и оно имеет 0,5 секунды точности до 10 секунд и 1 секунду после. Таймер может быть остановлен сигналом красного цвета.
