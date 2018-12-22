@@ -87,7 +87,7 @@ public class TileEntityAlternator extends TileEntityMultiblockPart<TileEntityAlt
 						
 						int output = ITConfig.Machines.alternator_RfPerTick;
 						
-						if(EnergyHelper.insertFlux(tileEntity, energyFacing, output, true)>0) {
+						if(EnergyHelper.insertFlux(tileEntity, energyFacing, output, true)>0 && (this.energyStorage.getEnergyStored()>output)) {
 							
 							EnergyHelper.insertFlux(tileEntity, energyFacing, output, false);
 							energyStorage.setEnergy(energyStorage.getEnergyStored()-output);
