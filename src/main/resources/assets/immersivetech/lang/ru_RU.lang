@@ -1,0 +1,96 @@
+#CREATIVE TAB
+itemGroup.immersivetech=Immersive Tech
+
+
+#BLOCKS
+#STONE
+tile.immersivetech.stone_decoration.cokebrick_reinforced.name=Армированный коксовый кирпич
+
+
+#ITEMS
+item.immersivetech.material.salt.name=Соль
+
+
+#FLUIDS
+tile.immersivetech.fluidDistWater.name=Дистиллированная вода
+tile.immersivetech.fluidSteam.name=Пар
+tile.immersivetech.fluidSlime.name=Жидкая слизь
+
+fluid.dist_water=Дистиллированная вода
+fluid.steam=Пар
+fluid.slime=Жидкая слизь
+
+
+#TILE ENTITYS
+#METAL
+tile.immersivetech.metal_device.coke_oven_preheater.name=Воздухонагреватель коксовой печи
+
+#METAL MULTIBLOCKS
+tile.immersivetech.metal_multiblock.distiller.name=Дистиллятор
+tile.immersivetech.metal_multiblock.solar_tower.name=Солнечная башня
+tile.immersivetech.metal_multiblock.solar_reflector.name=Солнечный отражатель
+tile.immersivetech.metal_multiblock.steam_turbine.name=Паровая трубина
+tile.immersivetech.metal_multiblock.boiler.name=Бойлер
+tile.immersivetech.metal_multiblock.alternator.name=Альтернатор
+
+#STONE MULTIBLOCKS
+tile.immersivetech.stone_multiblock.coke_oven_advanced.name=Продвинутая коксовая печь
+
+#METAL MULTIBLOCKS
+desc.immersiveengineering.info.multiblock.IT:Distiller=Дистиллятор
+desc.immersiveengineering.info.multiblock.IT:SolarTower=Солнечная башня
+desc.immersiveengineering.info.multiblock.IT:SolarReflector=Солнечный отражатель
+desc.immersiveengineering.info.multiblock.IT:SteamTurbine=Паровая трубина
+desc.immersiveengineering.info.multiblock.IT:Boiler=Бойлер
+desc.immersiveengineering.info.multiblock.IT:Alternator=Альтернатор
+
+#STONE MULTIBLOCKS
+desc.immersiveengineering.info.multiblock.IT:CokeOvenAdvanced=Продвинутая коксовая печь
+
+#CONNECTORS
+tile.immersivetech.connectors.connectors_timer.name=Redstone Timer
+
+
+#MANUAL
+ie.manual.category.it.name=Immersive Tech
+
+ie.manual.entry.cokeOvenAdvanced.name=Продвинутая коксовая печь
+ie.manual.entry.cokeOvenAdvanced.subtext=Это быстрей
+ie.manual.entry.cokeOvenAdvanced0=Продвинутая коксовая печь - это многоблочная структура, которая позволяет игроку быстрее добывать коксовый уголь и креозот.<br>Структура строится как показано выше, и формируется с помощью молотка инженера на центральном блоке из армированного коксового кирпича.
+ie.manual.entry.cokeOvenAdvanced1=Это позволяет автоматизировать входы и выходы, также она может быть оснащена подогревателями для ускорения процесса путем добавления горячего воздуха.<br>Печь изготовлена из армированного кирпича, поэтому советуем потратить свои первые партии стали на это обновление.<br>Подобно улучшенной доменной печи, коксовый уголь выводится спереди, а креозот - сзади.
+ Уголь подается через верх.
+ie.manual.entry.cokeOvenAdvanced2=Подогреватели коксовой печи используются для ускорения процесса очистки угля. Каждая печь может иметь до двух подогревателей, подключенных к портам на каждой стороне, и каждый подогреватель требует <config;i;cokeOvenPreheater_consumption> Flux/t для работы.
+ie.manual.entry.cokeOvenAdvanced3=
+
+ie.manual.entry.distiller.name=Дистиллятор
+ie.manual.entry.distiller.subtext=Чище чем вода
+ie.manual.entry.distiller0=Дистиллсятор - это многоблочная машина, которая превращает воду в дистиллированную воду и соль.<br>Структура создаётся как показано выше, и формируется с помощью молотка инженера на центральном листовом железе.
+ie.manual.entry.distiller1=Применение редстоун сигнала на передней панели управления остановит процесс машины, это поведение можно инвертировать с помощью молотка инженера.<br>Вода может быть введена в дистиллятор через люки слева, которые отмечены синими точками. Люк с оранжевой точкой справа служит для вывода жидкости, а другой люк сзади - для выхода соли.<br>Для производства дистиллированной воды и соли требуется энергия.<br>Одно ведро воды производит 500 мБ дистиллированной воды.
+
+ie.manual.entry.solarTower.name=Солнечная башня
+ie.manual.entry.solarTower.subtext=Энергия солнца
+ie.manual.entry.solarTower0=Солнечная башня - это многоблочная конструкция, которая использует солнечный свет, превращающий воду в пар.<br>Структура создаётся так, как показано выше, и сформирована с помощью молотка инженера на центральном краснокаменном иженерном блоке.
+ie.manual.entry.solarTower1=Block.<br>Солнечная Башня может производить Пар из Воды и <link;distiller;§n§oДистиллированной воды§r>.<br>Одно ведро дистиллированной воды производит 750 mB пара.<br>Одно ведро воды производит 500 мБ пара.<br>Вода может быть введена в Солнечную Башню через два люка слева и справа, которые отмечены синими точками. Люк с оранжевой точкой на задней панели служит выходом для жидкости.<br>Для работы Солнечной башни требуется как минимум один солнечный отражатель.
+ie.manual.entry.solarTower2=Солнечный отражатель - это многоблочная структура, которая отражает солнечный свет к центру Солнечной башни.<br>Структура строится как показано выше и формируетс с помощью молота инженера на центральном серебрянном блоке. 
+ie.manual.entry.solarTower3=Чтобы работать, не должно быть блока между ним и Солнечной башней и в верхней части отражателя (только в центре), фигура отражателя должна соответствовать центру Солнечной башни. Расстояние между отражателем и солнечной башней должно быть между <config;i;solarTower_minRange>-<config;i;solarTower_maxRange> блоков. Очевидно, это работает только в течение дня.
+
+ie.manual.entry.steamTurbine.name=Паровая трубина
+ie.manual.entry.steamTurbine.subtext=Кипящий вздох
+ie.manual.entry.steamTurbine0=Паровая трубина - это многоблочная конструкция, использующая пар для производства кинетической энергии.<br>Структура создаётся, как показано выше, и формируется с помощью молотка инженера на центральном стальном блоке (короткая сторона).
+ie.manual.entry.steamTurbine1=Применение сигнала красного камня на передней панели управления остановит процесс машины, это поведение можно инвертировать с помощью молотка инженера.<br>Трубопровод для жидкости перед машиной представляет вход пара. Выход кинетической энергии находится в задней части машины (стальной блок). Производит <config;i;steamTurbine_maxTorque> N*m Кинетической энергии на максимальной скорости <config;i;steamTurbine_maxSpeed> Rad/s.<br>Что бы работать, ему нужен <link;alternator;§o§nАльтернатор§r>.
+
+ie.manual.entry.boiler.name=Бойлер
+ie.manual.entry.boiler.subtext=Дизельный метод
+ie.manual.entry.boiler0=Бойлер - это мультиблок который использует <link;biodiesel;§o§nДизель§r> и воду для производства пара.<br>Структура создаётся, как показано выше, и формируется с помощью молотка инженера на центральном железобетонном блоке из листового металла (длинная сторона).
+ie.manual.entry.boiler1=Применение сигнала редстоуна на передней панели управления остановит процесс машины, это поведение можно инвертировать с помощью молотка инженера.<br>Вода может быть введена в котел через люки слева, которые отмечены синими точками. Дизель можно вводить справа от машины. Люк с оранжевой точкой наверху служит выходом жидкости.<br>Одно ведро воды производит 500 mB, а одно ведро <link;distiller;§n§oДистилированной воды§r> производит 750 mB пара (1000/burnTime)x<config;i;boiler_burnTimeModifier> mB дизеля.
+
+ie.manual.entry.alternator.name=Альтернатор
+ie.manual.entry.alternator.subtext=Давайте преобразуем
+ie.manual.entry.alternator0=Альтернатор - это многоблочная структура, которая преобразует кинетическую энергию в  электричество.<br>Конструкция создаётся как показано выше, и формируется с помощью молотка инженера на центральном тяжёлом инженерном блоке
+ie.manual.entry.alternator1=Для работы ему нужен генератор кинетической энергии прямо рядом (<link;steamTurbine;§n§oПаровая трубина§r>). Вход кинетической энергии находится сзади станка (там, где имеются блоки из листового металла), а выход энергии - спереди слева и спереди справа. Машина производит
+(Speed*Torque)/<config;i;alternator_RfModifier> Flux/t.<br>Альтернатор может хранить <config;i;alternator_energyStorage> энергии и может выводить <config;i;alternator_energyPerTick> Flux/t за каждое подключённое энергетическое устройство.
+ie.manual.entry.alternator2=Паровая трубина и альтернатор
+
+ie.manual.entry.redstone.name=Редстоун
+ie.manual.entry.redstone.subtext=Тик-так
+ie.manual.entry.redstone0=§6Редстоуновый таймер§r имеет функцию вывода сигнала Редстоуна в зависимости от задержки, наложенной на него. Время задержки можно установить в графическом интерфейсе таймера, и его точность составляет c 0,5 до 10 дальше по 1 секунде. Таймер может быть остановлен с помощью сигнала красного камня.
